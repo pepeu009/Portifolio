@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,800;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;position: fixed;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 10px;
+    z-index: 2;
+}
+
+.Logo-header {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-image: url(imagens/LOGOPD.png);
+
+}
+
+.menu-itens {
+    display: flex;
+    list-style: none;
+    justify-self: center;
+    justify-content: center;
+}
+
+.itens {
+    padding-left: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    color: white;
+}
+
+.itens:hover {
+    color: #FF8E40;  
+}
+
+.botao-contato {
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    width: 15%;
+    height: 50px;
+    transition: .4s;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.botao-contato:hover {
+    width: 17%;
+    color: white;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: -webkit-linear-gradient(left, #ff4262, #ff5d4f, #FF9F42, #FF8E40);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(imagens/background-linhas.png);
+    backdrop-filter: opacity(20%);
+    z-index: -15;
+}
+
+.bolha {
+    display: flex;
+    justify-content: center;
+    background-image: url(imagens/bolha.png);
+    background-position: center;
+    width: 700px;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.txt-apresentativo {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+#p1 {
+    font-size: 4em;
+    text-align: center;
+    text-align: start;
+}
+
+.nome {
+    background: -webkit-linear-gradient(left, #ff4262, #ff5d4f, #FF9F42, #FF8E40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cx-txt-main {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.txt-apresentativo-2 {
+    font-size: .9em;
+    width: 400px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+@media screen and (max-width: 1200px){
+    main {
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 50px;
+        background-size: cover;
+    }
+
+    .txt-apresentativo {
+        width: 100%;
+    }
+
+    .bolha {
+        background-position: center;
+        width: 90%;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .bolha {
+        background-position: center;
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .cx-txt-main {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: left;
+        padding-left: 30px;
+    }
+    
+    .bolha {
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+        padding-top: 50px;
+        margin-top: 30px;
+    }
+
+    .txt-apresentativo {
+        font-size: 2em;
+        font-weight: lighter;
+    }
+    
+    #p1 {
+        font-size: 3em;
+        text-align: center;
+        text-align: start;
+    }
+
+    .txt-apresentativo-2 {
+        font-size: .7em;
+        width: 90%;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+}
