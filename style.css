@@ -111,7 +111,7 @@ main {
 .bolha {
     display: flex;
     justify-content: center;
-    background-image: url(imagens/bolha.webp);
+    background-image: url(imagens/bolha.png);
     background-position: center;
     width: 700px;
     height: 700px;
