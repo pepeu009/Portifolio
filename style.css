@@ -286,6 +286,13 @@ main {
         background: -webkit-linear-gradient(left, #ff4262, #ff5d4f, #FF9F42, #FF8E40);
     }
 
+    .link-button:hover {
+        width: 100%;
+        font-size: 1.3em;
+        height: 80px;
+        background: -webkit-linear-gradient(left, #ff4262, #ff5d4f, #FF9F42, #FF8E40);
+    }
+
     .overlay {
         position: fixed;
         top: 0;
