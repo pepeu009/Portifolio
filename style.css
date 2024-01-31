@@ -253,6 +253,7 @@ main {
 
     .menu-content {
         display: flex;
+        position: fixed;
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
