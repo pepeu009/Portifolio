@@ -253,10 +253,8 @@ main {
 
     .menu-content {
         display: flex;
-        position: fixed;
         width: 100%;
         flex-direction: column;
-        justify-content: space-around;
         padding: 30px 16px;
     }
 
@@ -278,10 +276,12 @@ main {
         height: 70px;
         font-size: 1.3em;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .link-button {
         width: 100%;
+        font-size: 1.3em;
         height: 80px;
         background: -webkit-linear-gradient(left, #ff4262, #ff5d4f, #FF9F42, #FF8E40);
     }
