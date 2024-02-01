@@ -1,0 +1,32 @@
+@media screen and (max-width: 1200px){
+    main {
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 130px;
+        background-size: cover;
+    }
+    
+    .bolha {
+        background-position: center;
+        width: 90%;
+        height: 70vh;
+    }
+
+    .cx-txt-main {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: left;
+        width: 70%;
+    }
+
+    .txt-apresentativo-2 {
+        font-size: 1.2em;
+        width: 500px;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .fita {
+        height: 30vh;
+    }
+}
