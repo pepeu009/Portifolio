@@ -143,4 +143,17 @@
     .fita {
         height: 20vh;
     }
+
+    .header-sobre-mim {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-sobre-mim > h1 {
+        margin: 0;
+    }
+
+    .background-sobre-mim {
+        width: 80%;
+    }
 }
