@@ -4,7 +4,7 @@ ScrollReveal({ reset: true });
 const navBar = document.querySelector(".nav-mobile"),
        menuBtns = document.querySelectorAll(".menu-icon"),
        overlay = document.querySelector(".overlay");
-       itens = document.querySelector(".item");
+       itens = document.querySelectorAll(".item");
 
 
 
@@ -16,6 +16,8 @@ const navBar = document.querySelector(".nav-mobile"),
      overlay.addEventListener("click", () => {
        navBar.classList.remove("open");
      });
-     itens.addEventListener("click", () => {
+     itens.forEach((itens) =>
+     itens.addEventListener("click", (event) => {
         navBar.classList.remove("open");
-      });
+      })
+      );
