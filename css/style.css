@@ -195,3 +195,79 @@ main {
     background-size: cover;
     background-repeat: no-repeat;   
 }
+
+#sobre-mim {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.icon-perfil {
+    display: flex;
+    background-image: url(../imagens/icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.header-sobre-mim{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: max(1.7em, 3vw);
+}
+
+.header-sobre-mim  > h1 {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.text-box-apresentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#icons-skills, #icons-skills-final {
+    font-size: 2.5em;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#icons-skills-final {
+    margin-right: 0;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+#icons-skills:hover {
+
+
+}
+
+.txt-apresentativo-3 {
+    font-size: max(1.5em, 2vw);
+    width: 100%;
+}
+
+.text-box-apresentation > h2 {
+    font-size: max(1.7em, 4vw);
+    margin-top: 30px;
+
+}
+
+.background-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    background: -webkit-linear-gradient(left, #ff4262f1, #ff5e4ff5, #ffa142f3, #ff9040f3);
+    width: 60%;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: rgba(10, 10, 10, 0.397) 5px 5px 15px  5px;
+}
