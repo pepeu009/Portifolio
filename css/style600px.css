@@ -74,7 +74,7 @@
         background: -webkit-linear-gradient(left, #ff4262, #ff5d4f, #FF9F42, #FF8E40);
     }
 
-    .overlay {
+    .overlay-header {
         position: fixed;
         top: 0;
         left: -100%;
@@ -91,7 +91,7 @@
         font-size: 2em;
     }
     
-    #nav-mobile.open ~ .overlay {
+    #nav-mobile.open ~ .overlay-header {
         opacity: 1;
         left: 260px;
         pointer-events: auto;
@@ -155,5 +155,10 @@
 
     .background-sobre-mim {
         width: 80%;
+    }
+
+    .titulo-projetos > h1 {
+        font-size:  1em;
+
     }
 }
