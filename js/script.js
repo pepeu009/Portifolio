@@ -1,30 +1,23 @@
+ScrollReveal().reveal('.bolha', { delay: 200 });
+ScrollReveal({ reset: true });
 
-      var swiper = new Swiper(".slide-content", {
-        slidesPerView: 3,
-        spaceBetween: 25,
-        loop: true,
-        centerSlide: 'true',
-        fade: 'true',
-        grabCursor: 'true',
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-    
-        breakpoints:{
-            0: {
-                slidesPerView: 1,
-            },
-            520: {
-                slidesPerView: 2,
-            },
-            950: {
-                slidesPerView: 3,
-            },
-        },
+const navBar = document.querySelector(".nav-mobile"),
+       menuBtns = document.querySelectorAll(".menu-icon"),
+       overlay = document.querySelector(".overlay-header");
+       itens = document.querySelector(".item");
+
+
+
+     menuBtns.forEach((menuBtn) => {
+       menuBtn.addEventListener("click", () => {
+         navBar.classList.toggle("open");
+       });
+     });
+     overlay.addEventListener("click", () => {
+       navBar.classList.remove("open");
+     });
+     itens.addEventListener("click", () => {
+        navBar.classList.remove("open");
       });
+
+    
