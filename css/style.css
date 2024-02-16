@@ -284,9 +284,7 @@ main {
   margin-bottom: 30px;
 }
 .titulo-projetos > h1 {
-  background: -webkit-linear-gradient(left, #ff4262, #ff5d4f, #FF9F42, #FF8E40);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 .slide-container{
     max-width: 1120px;
