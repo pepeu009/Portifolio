@@ -269,7 +269,7 @@ main {
     display: flex;
     flex-direction: column;
     background: -webkit-linear-gradient(left, #ff4262f1, #ff5e4ff5, #ffa142f3, #ff9040f3);
-    width: 60%;
+    width: 70%;
     padding: 40px;
     border-radius: 30px;
     box-shadow: rgba(10, 10, 10, 0.397) 5px 5px 15px  5px;
