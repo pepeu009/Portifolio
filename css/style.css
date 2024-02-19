@@ -405,6 +405,27 @@ main {
     background-color: #0c0c0c;
   }
 
+  #icons-skills-card, #icons-skills-final-card {
+    color: #252525;
+    font-size: 1.4em;
+    padding-right: 10px;
+  }
+
+  #icons-skills-final-card {
+    padding: 0;
+  }
+
+  #icons-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+  }
+
+  #icons-card > p {
+    color: rgba(39, 39, 39, 0.705);
+  }
+
   @media screen and (max-width: 768px) {
     .slide-content{
       margin: 0 10px;
